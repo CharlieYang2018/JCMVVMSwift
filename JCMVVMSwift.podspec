@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name      = 'JCMVVMSwift'
-s.version   = '1.0.0'
+s.version   = '1.0.1'
 s.license   = 'MIT'
 s.summary   = 'Use to create base MVVM project'
 s.homepage  = 'https://github.com/CharlieYang2018/JCMVVMSwift'
