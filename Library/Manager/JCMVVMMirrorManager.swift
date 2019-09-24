@@ -1,6 +1,6 @@
 //
 //  MirrorManager.swift
-//  LaijieMusic
+//  JCMVVMSWIFT
 //
 //  Created by jcYang on 2019/9/23.
 //  Copyright © 2019年 com.jcYang. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 
 typealias MIRROR_FILTER_FUNCTION = (_ label:String?,_ value:Any?) -> Bool
-class MirrorManager {
+class JCMVVMMirrorManager {
   
   
   /// 获取所有属性

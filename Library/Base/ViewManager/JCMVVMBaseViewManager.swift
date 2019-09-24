@@ -1,6 +1,6 @@
 //
 //  BaseViewManager.swift
-//  LaijieMusic
+//  JCMVVMSWIFT
 //
 //  Created by jcYang on 2019/9/12.
 //  Copyright © 2019年 com.jcYang. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewManager: ViewManagerProtocol {
+class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
   ///是否自动加载子views，默认为true。如果你不想自动添加子view，则设为false，以此同时也无法自动执行添加约束的操作
   private var _shouldAddSubViewsAuto = true
   ///是否自动加载约束，默认使用。
@@ -45,7 +45,7 @@ class BaseViewManager: ViewManagerProtocol {
       return
     }
     //1.获取所有view属性
-    let subViewProperties = MirrorManager.allProperties(self) { (name, value) -> Bool in
+    let subViewProperties = JCMVVMMirrorManager.allProperties(self) { (name, value) -> Bool in
       guard let _ = value as? UIView else{
         return false
       }
