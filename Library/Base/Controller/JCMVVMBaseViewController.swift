@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class JCMVVMBaseViewController:UIViewController,JCMVVMViewControllerProtocol{
+open class JCMVVMBaseViewController:UIViewController,JCMVVMViewControllerProtocol{
   //View manager. 在派生的controller中重写这个变量
   public var viewManager : JCMVVMViewManagerProtocol?{
     return nil;
