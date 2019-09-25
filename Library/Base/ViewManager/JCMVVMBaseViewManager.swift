@@ -18,7 +18,7 @@ open class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
   ///super View
   weak var superView : UIView?
   
-  init(_ vc:UIViewController) {
+  public init(_ vc:UIViewController) {
     _controller = vc
     superView = vc.view
   }
@@ -37,10 +37,10 @@ open class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
     return _controller;
   }
   
-  public func setupSubView() {
+  open func setupSubView() {
   }
   
-  public func addSubViews(_ views: Array<UIView>?) {
+  open func addSubViews(_ views: Array<UIView>?) {
     guard let nonilSuperView = self.superView else {
       return
     }
@@ -61,11 +61,11 @@ open class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
     }
   }
   
-  public func addConstraints() {
+  open func addConstraints() {
     
   }
   
-  public func setupOther() {
+  open func setupOther() {
     
   }
   

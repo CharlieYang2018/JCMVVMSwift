@@ -10,7 +10,7 @@ import UIKit
 
 open class JCMVVMBaseViewController:UIViewController,JCMVVMViewControllerProtocol{
   //View manager. 在派生的controller中重写这个变量
-  public var viewManager : JCMVVMViewManagerProtocol?{
+  open var viewManager : JCMVVMViewManagerProtocol?{
     return nil;
   }
   
