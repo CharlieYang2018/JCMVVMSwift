@@ -25,22 +25,22 @@ public class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
   
   ///MARK:以下函数是viewmanager protocol函数的实现
   
-  var shouldAddSubViewsAuto: Bool{
+  public var shouldAddSubViewsAuto: Bool{
     return _shouldAddSubViewsAuto
   }
   
-  var shouldAddConstraintAuto: Bool{
+  public var shouldAddConstraintAuto: Bool{
     return _shouldAddConstraintAuto
   }
   
-  var controller: UIViewController?{
+  public var controller: UIViewController?{
     return _controller;
   }
   
-  func setupSubView() {
+  public func setupSubView() {
   }
   
-  func addSubViews(_ views: Array<UIView>?) {
+  public func addSubViews(_ views: Array<UIView>?) {
     guard let nonilSuperView = self.superView else {
       return
     }
@@ -61,11 +61,11 @@ public class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
     }
   }
   
-  func addConstraints() {
+  public func addConstraints() {
     
   }
   
-  func setupOther() {
+  public func setupOther() {
     
   }
   
