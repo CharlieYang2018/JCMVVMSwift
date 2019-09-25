@@ -9,7 +9,7 @@
 import Foundation
 
 typealias MIRROR_FILTER_FUNCTION = (_ label:String?,_ value:Any?) -> Bool
-class JCMVVMMirrorManager {
+public class JCMVVMMirrorManager {
   
   
   /// 获取所有属性
