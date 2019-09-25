@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol JCMVVMViewControllerProtocol {
+public protocol JCMVVMViewControllerProtocol {
   var viewManager : JCMVVMViewManagerProtocol?{get}
 }

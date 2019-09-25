@@ -9,4 +9,5 @@ s.source    = {:git => 'https://github.com/CharlieYang2018/JCMVVMSwift.git', :ta
 s.requires_arc = true
 s.source_files = 'Library/**/*.swift'
 s.frameworks = 'UIKit'
+s.platform  = :ios,'9.0'
 end

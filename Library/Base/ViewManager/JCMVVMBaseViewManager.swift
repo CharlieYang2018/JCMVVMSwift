@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
+public class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
   ///是否自动加载子views，默认为true。如果你不想自动添加子view，则设为false，以此同时也无法自动执行添加约束的操作
   private var _shouldAddSubViewsAuto = true
   ///是否自动加载约束，默认使用。
