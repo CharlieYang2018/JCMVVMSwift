@@ -14,7 +14,7 @@ open class JCMVVMBaseViewController:UIViewController,JCMVVMViewControllerProtoco
     return nil;
   }
   
-  init() {
+  public init() {
     super.init(nibName: nil, bundle: nil)
     setup()
   }
