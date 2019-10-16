@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class JCMVVMBaseModel {
+open class JCMVVMBaseModel : NSObject {
   /// translate json to model
   ///
   /// - Parameter json: json contents
