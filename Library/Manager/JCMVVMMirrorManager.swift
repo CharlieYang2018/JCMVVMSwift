@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias MIRROR_FILTER_FUNCTION = (_ label:String?,_ value:Any?) -> Bool
+public typealias MIRROR_FILTER_FUNCTION = (_ label:String?,_ value:Any?) -> Bool
 public class JCMVVMMirrorManager {
   
   
@@ -18,7 +18,7 @@ public class JCMVVMMirrorManager {
   ///   - obj: 对象
   ///   - filter: 过滤函数
   /// - Returns: 对象的属性集合
-  class func allProperties(_ obj:Any, filter:MIRROR_FILTER_FUNCTION? = nil) -> Dictionary<String,Any?> {
+  public class func allProperties(_ obj:Any, filter:MIRROR_FILTER_FUNCTION? = nil) -> Dictionary<String,Any?> {
     let mirror = Mirror(reflecting: obj)
     //1.获取所有属性
     var properties = [String:Any]()
@@ -42,7 +42,7 @@ public class JCMVVMMirrorManager {
     
   }
   
-  class func getPropertyByKey(in obj:Any, with name:String) -> Any?{
+  public class func getPropertyByKey(in obj:Any, with name:String) -> Any?{
     let propeties = self.allProperties(obj)
     if propeties.keys.contains(name) {
       return propeties[name] as Any?

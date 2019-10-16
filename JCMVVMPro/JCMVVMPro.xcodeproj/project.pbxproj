@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5630B9C2356D6650090B23C /* JCMVVMBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5630B9B2356D6650090B23C /* JCMVVMBaseModel.swift */; };
+		F5630B9F2356D6A90090B23C /* JCMVVMBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5630B9E2356D6A90090B23C /* JCMVVMBaseView.swift */; };
 		F5659D842339BF8C00F4F874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659D832339BF8C00F4F874 /* AppDelegate.swift */; };
 		F5659D862339BF8C00F4F874 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5659D852339BF8C00F4F874 /* ViewController.swift */; };
 		F5659D892339BF8C00F4F874 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5659D872339BF8C00F4F874 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F5630B9B2356D6650090B23C /* JCMVVMBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMVVMBaseModel.swift; sourceTree = "<group>"; };
+		F5630B9E2356D6A90090B23C /* JCMVVMBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCMVVMBaseView.swift; sourceTree = "<group>"; };
 		F5659D802339BF8C00F4F874 /* JCMVVMPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCMVVMPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5659D832339BF8C00F4F874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5659D852339BF8C00F4F874 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5630B9A2356D6400090B23C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5630B9B2356D6650090B23C /* JCMVVMBaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F5630B9D2356D6950090B23C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5630B9E2356D6A90090B23C /* JCMVVMBaseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F5659D772339BF8C00F4F874 = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +183,8 @@
 		F5659DB62339BFAE00F4F874 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				F5630B9D2356D6950090B23C /* View */,
+				F5630B9A2356D6400090B23C /* Model */,
 				F5659DB72339BFAE00F4F874 /* ViewManager */,
 				F5659DBA2339BFAE00F4F874 /* Controller */,
 			);
@@ -325,8 +347,10 @@
 				F5659D862339BF8C00F4F874 /* ViewController.swift in Sources */,
 				F5659D842339BF8C00F4F874 /* AppDelegate.swift in Sources */,
 				F5659DC32339BFAF00F4F874 /* JCMVVMViewControllerProtocol.swift in Sources */,
+				F5630B9F2356D6A90090B23C /* JCMVVMBaseView.swift in Sources */,
 				F5659DC12339BFAF00F4F874 /* JCMVVMViewManagerProtocol.swift in Sources */,
 				F5659DC22339BFAF00F4F874 /* JCMVVMBaseViewController.swift in Sources */,
+				F5630B9C2356D6650090B23C /* JCMVVMBaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
