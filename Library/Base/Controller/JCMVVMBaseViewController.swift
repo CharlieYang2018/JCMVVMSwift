@@ -35,7 +35,7 @@ open class JCMVVMBaseViewController:UIViewController,JCMVVMViewControllerProtoco
   }
   
   private func setupViewManager(){
-    guard let nonilViewManager = self.viewManager else {
+  guard let nonilViewManager = self.viewManager else {
       return
     }
     //1.

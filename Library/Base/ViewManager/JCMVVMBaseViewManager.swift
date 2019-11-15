@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
+open class JCMVVMBaseViewManager:NSObject,JCMVVMViewManagerProtocol {
   ///是否自动加载子views，默认为true。如果你不想自动添加子view，则设为false，以此同时也无法自动执行添加约束的操作
   private var _shouldAddSubViewsAuto = true
   ///是否自动加载约束，默认使用。
@@ -16,11 +16,15 @@ open class JCMVVMBaseViewManager: JCMVVMViewManagerProtocol {
   ///controller
   weak private var _controller : UIViewController?
   ///super View
-  weak var superView : UIView?
+  var superView : UIView?{
+    guard let nonilVC = _controller else {
+        return nil
+    }
+    return nonilVC.view
+ }
   
-  public init(_ vc:UIViewController) {
+  public required init(_ vc:UIViewController) {
     _controller = vc
-    superView = vc.view
   }
   
   ///MARK:以下函数是viewmanager protocol函数的实现
